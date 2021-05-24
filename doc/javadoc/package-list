@@ -1,0 +1,17 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:sk.uniza.semestralka.database/KanbanDatabase.Companion///PointingToDeclaration/sk/uniza/semestralka/database/KanbanDatabase.Companion.html
+$dokka.location:sk.uniza.semestralka.ui.fragments/ProjectAdapter.ProjectViewHolder///PointingToDeclaration/sk/uniza/semestralka/ui/fragments/ProjectAdapter.ProjectViewHolder.html
+$dokka.location:sk.uniza.semestralka.ui.fragments/TabFragment.Callbacks///PointingToDeclaration/sk/uniza/semestralka/ui/fragments/TabFragment.Callbacks.html
+$dokka.location:sk.uniza.semestralka.ui.fragments/TabFragment.TaskViewAdapter///PointingToDeclaration/sk/uniza/semestralka/ui/fragments/TabFragment.TaskViewAdapter.html
+$dokka.location:sk.uniza.semestralka.ui.fragments/TabFragment.TaskViewHolder///PointingToDeclaration/sk/uniza/semestralka/ui/fragments/TabFragment.TaskViewHolder.html
+$dokka.location:sk.uniza.semestralka.ui.widgets/ProjectWidgetFactory.WidgetFactory///PointingToDeclaration/sk/uniza/semestralka/ui/widgets/ProjectWidgetFactory.WidgetFactory.html
+sk.uniza.semestralka
+sk.uniza.semestralka.activities
+sk.uniza.semestralka.database
+sk.uniza.semestralka.entities
+sk.uniza.semestralka.entities.converters
+sk.uniza.semestralka.entities.relations
+sk.uniza.semestralka.ui.fragments
+sk.uniza.semestralka.ui.widgets
+

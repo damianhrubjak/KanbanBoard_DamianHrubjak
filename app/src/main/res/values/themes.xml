@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Semestralka" parent="Theme.MaterialComponents.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/palette_base</item>
+        <item name="colorPrimaryVariant">@color/palette_base_dark</item>
+        <item name="colorOnPrimary">@color/md_white_1000</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/palette_secondary</item>
+        <item name="colorSecondaryVariant">@color/palette_secondary_alt</item>
+        <item name="colorOnSecondary">@color/md_white_1000</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+
+
+    <style name="Theme.Semestralka.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Semestralka.ToolBar">
+        <item name="android:textColorPrimary">@color/md_white_1000</item>
+        <item name="android:textColorSecondary">@color/md_white_1000</item>
+        <item name="android:actionMenuTextColor">@color/md_white_1000</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+
+    <style name="Theme.Semestralka.InputTextOutlined" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <item name="android:textColorHint">@color/md_grey_700</item>
+        <item name="android:textColor">@color/md_grey_900</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <!-- Selected -->
+        <item name="boxStrokeColor">@color/palette_secondary</item>
+        <item name="hintTextColor">@color/palette_secondary</item>
+
+    </style>
+
+    <style name="Theme.Semestralka.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Semestralka.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="ThemeOverlay.Semestralka.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+
+    <style name="Theme.Semestralka.LoadScreen" parent="">
+        <item name="android:backgroundTint">@color/md_white_1000</item>
+    </style>
+
+</resources>

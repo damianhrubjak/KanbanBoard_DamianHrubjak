@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/projects_fragment_navigation">
+
+    <fragment
+        android:id="@+id/projects_fragment_navigation"
+        android:name="sk.uniza.semestralka.ui.fragments.HomeFragment"
+        android:label="@string/menu_projects_name"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_projects_to_addProjectFragment"
+            app:destination="@id/addProjectFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_nav_projects_to_editProjectFragment"
+            app:destination="@id/editProjectFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+
+        <action
+            android:id="@+id/action_nav_projects_to_TaskFragment"
+            app:destination="@id/taskFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProjectFragment"
+        android:name="sk.uniza.semestralka.ui.fragments.AddProjectFragment"
+        android:label="@string/toolbar_add_project"
+        tools:layout="@layout/fragment_add_project">
+        <action
+            android:id="@+id/action_addProjectFragment_to_nav_projects"
+            app:destination="@id/projects_fragment_navigation"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProjectFragment"
+        android:name="sk.uniza.semestralka.ui.fragments.EditProjectFragment"
+        android:label="@string/toolbar_edit_project"
+        tools:layout="@layout/fragment_edit_project">
+        <argument
+            android:name="argProjectID"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_editProjectFragment_to_nav_projects"
+            app:destination="@id/projects_fragment_navigation"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskFragment"
+        android:name="sk.uniza.semestralka.ui.fragments.TaskFragment"
+        android:label="@string/toolbar_tasks"
+        tools:layout="@layout/fragment_task">
+        <argument
+            android:name="argProjectID"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_taskFragment_to_addTask"
+            app:destination="@id/addTask"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_taskFragment_to_editTaskFragment"
+            app:destination="@id/editTaskFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_taskFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTask"
+        android:name="sk.uniza.semestralka.ui.fragments.AddTaskFragment"
+        android:label="@string/add_task_button"
+        tools:layout="@layout/fragment_add_task" >
+        <argument
+            android:name="argProjectID"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_addTask_to_taskFragment"
+            app:destination="@id/taskFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/editTaskFragment"
+        android:name="sk.uniza.semestralka.ui.fragments.EditTaskFragment"
+        android:label="@string/button_edit_task" >
+        <action
+            android:id="@+id/action_editTaskFragment_to_taskFragment"
+            app:destination="@id/taskFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+
+    <action
+        android:id="@+id/globalNavigationToProjects"
+        app:destination="@id/projects_fragment_navigation"
+        app:enterAnim="@anim/fragment_fade_enter"
+        app:exitAnim="@anim/fragment_fade_exit" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="sk.uniza.semestralka.ui.fragments.SettingsFragment"
+        android:label="@string/toolbar_setting" />
+</navigation>

@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Kanban Board</string>
+    <string name="creator">Damián Hrubják</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="about_author">About author</string>
+
+
+    <string name="toolbar_add_project">New project</string>
+    <string name="toolbar_edit_project">Edit project</string>
+    <string name="toolbar_tasks">@string/task_section_name</string>
+    <string name="toolbar_setting">Settings</string>
+
+
+    <string name="menu_projects_name">Projects</string>
+
+    <string name="add_project_button">New Project</string>
+    <string name="add_task_button">New Task</string>
+
+    <string name="task_word">task</string>
+    <string name="task_word_plural">tasks</string>
+
+    <string name="task_section_name">Tasks</string>
+
+    <string name="project_input_project_name">Project name:</string>
+    <string name="project_input_project_description">Project description:</string>
+    <string name="project_input_project_deadline">Project deadline:</string>
+    <string name="project_input_project_button_submit">Add Project</string>
+
+    <string name="task_input_task_name">Task name:</string>
+    <string name="task_input_task_description">Task description:</string>
+    <string name="task_input_task_color">Task color:</string>
+    <string name="task_input_task_type">Task type:</string>
+    <string name="task_input_task_button_submit">Add task</string>
+
+    <string name="button_edit_project">Edit Project</string>
+    <string name="button_delete_project">Delete Project</string>
+
+    <string name="button_edit_task">Edit Task</string>
+    <string name="button_delete_task">Delete Task</string>
+    <string name="delete_confirm_message">@string/button_delete_project</string>
+
+    <string name="successful_add_project">Project added successfully</string>
+    <string name="successful_edit_project">Project edited successfully</string>
+
+    <string name="successful_add_task">Task added successfully</string>
+    <string name="successful_edit_task">Task edited successfully</string>
+
+
+    <string name="title_activity_tasks">TasksActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <string name="to_do_text">To Do</string>
+    <string name="doing_text">Doing</string>
+    <string name="done_text">Done</string>
+
+    <string name="default_color">Default</string>
+    <string name="yellow_color">Yellow</string>
+    <string name="blue_color">Blue</string>
+    <string name="red_color">Red</string>
+    <string name="green_color">Green</string>
+
+    <string name="dialog_box_project_delete_title">Delete project</string>
+    <string name="dialog_box_project_delete_message">Are you sure you want to delete this project?</string>
+
+    <string name="error_empty_input">This field can not be empty!</string>
+
+    <string name="error_bad_task_type">Error, bad task type</string>
+
+    <string name="deadline_today">Today is deadline for project:</string>
+    <string name="deadline_today_desc">You still have a lot of time to finish this project… You can do it. Don\'t waste your time</string>
+    <string name="deadline_late">You are late with project:</string>
+    <string name="deadline_late_desc">Ask your boss, to change project deadline, or Hurry UP!</string>
+    <string name="notification_channel_id">Project Notification</string>
+    <string name="notification_channel_name">Project Deadline Notification</string>
+    <!-- Preference Titles -->
+    <string name="notification_header">Notifications</string>
+
+    <!-- Notifications Preferences -->
+    <string name="notification_title">Deadline notification</string>
+    <string name="notification_desc">Send me notification when deadline is close</string>
+
+    <string name="notification_time_title">Pick time for deadline notification</string>
+    <string name="notification_time_desc">Choose time when notification for close deadline will appear</string>
+
+    <string-array name="notification_deadline_time">
+        <item>06:00</item>
+        <item>09:00</item>
+        <item>11:00</item>
+        <item>13:00</item>
+        <item>15:00</item>
+        <item>17:00</item>
+        <item>19:00</item>
+        <item>22:00</item>
+    </string-array>
+    <string-array name="notification_deadline_time_values">
+        <item>06</item>
+        <item>09</item>
+        <item>11</item>
+        <item>13</item>
+        <item>15</item>
+        <item>17</item>
+        <item>19</item>
+        <item>22</item>
+    </string-array>
+    <string name="add_widget">Add widget</string>
+    <string name="most_close_projects">Closest deadlines</string>
+    <string name="no_projects">No projects found!</string>
+    <string name="widget_add_project">Click to add one</string>
+
+</resources>

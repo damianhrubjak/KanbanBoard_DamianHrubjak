@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory app:title="@string/notification_header">
+        <SwitchPreferenceCompat
+            app:key="notification_value"
+            app:summary="@string/notification_desc"
+            app:title="@string/notification_title"
+            app:defaultValue="true"/>
+
+
+        <ListPreference
+            app:dependency="notification_value"
+            app:key="notification_time"
+            app:title="@string/notification_time_title"
+            app:summary="%s"
+            android:entries="@array/notification_deadline_time"
+            android:entryValues="@array/notification_deadline_time_values"
+            android:defaultValue="15"
+            />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
